@@ -49,6 +49,10 @@ namespace Scp682_EXILED
 
         protected override void RoleRemoved(Player player)
         {
+            foreach (CoroutineHandle coroutine in coroutines)
+            {
+                Timing.KillCoroutines(coroutine);
+            }
             coroutines.Clear();
             Cassie.Message(MainClass.singleton.Config.CassieDeathMessage);
             base.RoleRemoved(player);
