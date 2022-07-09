@@ -11,7 +11,7 @@ namespace Scp682_EXILED
         public override string Author { get; } = "xNexusACS";
         public override string Name { get; } = "SCP682_EXILED";
         public override string Prefix { get; } = "scp682";
-        public override Version Version { get; } = new Version(0, 1, 0);
+        public override Version Version { get; } = new Version(0, 2, 0);
         public override Version RequiredExiledVersion { get; } = new Version(5, 2, 2);
 
         public EventHandlers EventHandlers { get; private set; }
