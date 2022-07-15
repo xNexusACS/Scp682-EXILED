@@ -80,8 +80,8 @@ namespace Scp682_EXILED
         {
             for (;;)
             {
-                player.Heal(30);
-                yield return Timing.WaitForSeconds(5f);
+                player.Heal(MainClass.singleton.Config.RegenAmount);
+                yield return Timing.WaitForSeconds(MainClass.singleton.Config.RegenDelay);
             }
         }
     }

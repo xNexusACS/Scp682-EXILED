@@ -14,5 +14,7 @@ namespace Scp682_EXILED
         public float DamageAmount { get; set; } = 80f;
         public string CassieDeathMessage { get; set; } = "S C P 6 8 2 Has been contained";
         public int SpawnChance { get; set; } = 30;
+        public int RegenAmount { get; set; } = 30;
+        public float RegenDelay { get; set; } = 20f;
     }
 }
